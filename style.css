@@ -1,0 +1,176 @@
+body {
+  background: #fff;
+  font-family: 'DejaVu Sans', 'Trebuchet MS', Arial, sans-serif;
+  text-align: justify;
+}
+
+h1, h6 {
+  font-family: 'lm_roman_12regular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 28pt;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 28pt;
+}
+
+h6 {
+  font-size: 13pt;
+  margin: 3pt 0 18pt 0;
+}
+
+h1, h3#subtitle, h6 {
+  text-align: center;
+}
+
+h2 {
+  border-bottom: 1px solid #008000;
+  border-left: 1px solid #008000;
+  margin-top: 24pt;
+  padding-left: 4pt;
+}
+
+h2:hover, h2:hover a {
+  background-color: #008000;
+  color: #fff;
+}
+
+h2, h3#subtitle {
+  font-family: Times, serif;
+  font-weight: normal;
+}
+
+div.hr {
+  height: 15px;
+  background: url(images/line.png) no-repeat center;
+  clear: both;
+  margin-top: 2em;
+}
+
+div.hr hr {
+  display: none;
+}
+
+ul, h2 {
+  /*width: 700px;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+ul li {
+  list-style-image: url(images/bullet.png);
+  margin-left: 18pt;
+  margin-bottom: 6pt;
+  margin-right: 0px;
+}
+
+ul li:hover {
+  list-style-image: url(images/bullet2.png);
+}
+
+ul li ul {
+  margin-top: 0.25em;
+}
+
+ul li ul li, ul li ul li:hover {
+  list-style-image: url(images/arrow.gif);
+  margin-bottom: 0px;
+}
+
+a:link, a:visited, a:active, a:hover {
+  color: #008000;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+div#HeaderLeft {
+  width: 50%;
+  float: left;
+  text-align: right;
+  margin-bottom: 1em;
+}
+
+div#HeaderLeft img {
+  border: 1px solid #000;
+  margin-right: 5px;
+}
+
+div#HeaderRight {
+  width: 50%;
+  margin-left: 50%;
+  padding-left: 5px;
+}
+
+p#Language {
+  clear: both;
+  float: none;
+  text-align: center;
+}
+
+acronym {
+  cursor: help;
+}
+
+/* --- Dynamically Generated Menu --- */
+
+div#menu {
+  border-right: 1px solid #008000;
+  border-top: 1px solid #008000;
+
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+
+  font-size: 75%;
+}
+
+div#menu h3 {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  background-color: #008000;
+  background-repeat: no-repeat;
+  background-position: center right;
+  cursor: pointer;
+}
+
+div#menu, div#menu ul {
+  margin: 0;
+  width: 150px;
+  min-width: 150px;
+  background-color: #fff;
+}
+
+div#menu.visible ul {
+  display: block;
+}
+
+div#menu.visible h3 {
+  background-image: url(images/minus.gif);
+}
+
+div#menu.hidden ul {
+  display: none;
+}
+
+div#menu.hidden h3 {
+  background-image: url(images/plus.gif);
+}
+
+div#menu ul li {
+  list-style-image: url(images/arrow.gif);
+  margin: 0.25em 0 0.25em 1.80em;
+  color: #008000;
+}
+
+div#menu ul li:hover {
+  border: 0;
+}
